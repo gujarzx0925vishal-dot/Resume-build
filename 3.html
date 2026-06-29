@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Professional Resume Templates</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fc;
+color:#333;
+}
+
+/* Navigation */
+
+header{
+background:#0d6efd;
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+.menu{
+display:flex;
+list-style:none;
+}
+
+.menu li{
+margin-left:25px;
+}
+
+.menu a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+.menu a:hover{
+color:yellow;
+}
+
+.menu-btn{
+display:none;
+font-size:28px;
+cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+background:linear-gradient(135deg,#0d6efd,#6610f2);
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:45px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+max-width:800px;
+margin:auto;
+line-height:1.8;
+}
+
+.hero button{
+margin-top:30px;
+padding:14px 35px;
+font-size:18px;
+background:white;
+color:#0d6efd;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-weight:bold;
+transition:.4s;
+}
+
+.hero button:hover{
+background:#ffc107;
+color:black;
+}
+
+/* Section */
+
+section{
+padding:60px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:35px;
+margin-bottom:15px;
+color:#0d6efd;
+}
+
+.section-text{
+text-align:center;
+max-width:900px;
+margin:auto;
+font-size:18px;
+line-height:1.8;
+margin-bottom:40px;
+}
+
+/* Cards */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.4s;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#0d6efd;
+}
+
+.card p{
+line-height:1.7;
+}
+
+/* Industry */
+
+.industry{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:18px;
+margin-top:30px;
+}
+
+.industry div{
+background:white;
+padding:18px;
+border-radius:10px;
+text-align:center;
+font-weight:bold;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+/* Footer */
+
+footer{
+background:#0d6efd;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+line-height:2;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.menu{
+display:none;
+flex-direction:column;
+background:#0d6efd;
+position:absolute;
+top:65px;
+left:0;
+width:100%;
+text-align:center;
+}
+
+.menu li{
+margin:18px 0;
+}
+
+.menu.show{
+display:flex;
+}
+
+.menu-btn{
+display:block;
+}
+
+.hero h1{
+font-size:34px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<ul id="menu">
+
+<li><a href="index.html"> Professional</a></li>
+
+<li><a href="2.html">Build</a></li>
+
+<li><a href="3.html">Templatess</a></li>
+
+<li><a href="4.html">Builder Works</a></li>
+
+<li><a href="5.html">Why Choose</a></li>
+
+</ul>
+</header>
+
+<section class="hero">
+
+<h1>Professional Resume Templates</h1>
+
+<p>
+Find the perfect resume template that showcases your strengths and helps you
+create an excellent first impression. Browse professionally designed templates
+for every career and experience level.
+</p>
+
+<button onclick="showMessage()">Explore Templates</button>
+
+</section>
+
+<section id="templates">
+
+<h2 class="section-title">Resume Template Categories</h2>
+
+<p class="section-text">
+Choose from professionally crafted resume templates optimized for readability,
+ATS compatibility, and modern hiring standards.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Modern Templates</h3>
+<p>
+Clean layouts with contemporary designs ideal for technology,
+marketing, finance, and corporate careers.
+</p>
+</div>
+
+<div class="card">
+<h3>Professional Templates</h3>
+<p>
+Traditional layouts suitable for business, healthcare,
+education, government, and administration.
+</p>
+</div>
+
+<div class="card">
+<h3>Creative Templates</h3>
+<p>
+Designed for graphic designers, photographers,
+content creators, media professionals, and artists.
+</p>
+</div>
+
+<div class="card">
+<h3>Minimalist Templates</h3>
+<p>
+Simple and elegant designs that focus attention
+on your qualifications and achievements.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="industry">
+
+<h2 class="section-title">Industry-Specific Designs</h2>
+
+<p class="section-text">
+Our collection includes templates tailored for different industries,
+ensuring a professional presentation for every applicant.
+</p>
+
+<div class="industry">
+
+<div>Information Technology</div>
+<div>Software Development</div>
+<div>Engineering</div>
+<div>Healthcare</div>
+<div>Sales</div>
+<div>Marketing</div>
+<div>Human Resources</div>
+<div>Finance</div>
+<div>Customer Service</div>
+<div>Education</div>
+<div>Hospitality</div>
+<div>Retail</div>
+
+</div>
+
+</section>
+
+<footer id="footer">
+
+<h2>Professional Resume Templates</h2>
+
+<p><strong>Name:</strong> Vishal Gujar</p>
+
+<p><strong>Course:</strong> AI Software Development</p>
+
+<p><strong>College:</strong> ABIT</p>
+
+<p><strong>Date:</strong> 29/06/2026</p>
+
+<p>© 2026 Resume Builder. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("show");
+}
+
+function showMessage(){
+alert("Explore our ATS-friendly professional resume templates!");
+}
+
+</script>
+
+</body>
+</html>

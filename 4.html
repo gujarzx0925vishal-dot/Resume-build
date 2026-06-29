@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Our Online Resume Builder Works</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:#f4f8fc;
+    color:#333;
+}
+
+/* Navigation */
+
+nav{
+    background:#0d6efd;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 8%;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:26px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:yellow;
+}
+
+.menu-btn{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* Hero */
+
+.hero{
+    background:linear-gradient(135deg,#0d6efd,#00b4db);
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:19px;
+    max-width:800px;
+    margin:auto;
+}
+
+/* Section */
+
+section{
+    padding:60px 8%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:40px;
+    color:#0d6efd;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.step{
+    width:60px;
+    height:60px;
+    background:#0d6efd;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:12px;
+    color:#0d6efd;
+}
+
+.card p{
+    line-height:1.7;
+}
+
+/* Benefits */
+
+.benefits{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:35px;
+}
+
+.benefit{
+    background:white;
+    text-align:center;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    font-size:18px;
+    font-weight:bold;
+}
+
+.ready{
+    text-align:center;
+    margin-top:40px;
+    font-size:20px;
+    font-weight:bold;
+    color:#0d6efd;
+}
+
+/* Footer */
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+footer p{
+    margin:8px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav ul{
+    display:none;
+    position:absolute;
+    top:65px;
+    left:0;
+    width:100%;
+    background:#0d6efd;
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul.active{
+    display:flex;
+}
+
+nav ul li{
+    margin:18px 0;
+}
+
+.menu-btn{
+    display:block;
+}
+
+.hero h1{
+    font-size:32px;
+}
+
+}
+</style>
+
+</head>
+<body>
+<ul id="menu">
+
+<li><a href="index.html"> Professional</a></li>
+
+<li><a href="2.html">Build</a></li>
+
+<li><a href="3.html">Templatess</a></li>
+
+<li><a href="4.html">Builder Works</a></li>
+
+<li><a href="5.html">Why Choose</a></li>
+
+</ul>
+s<section class="hero" id="home">
+
+<h1>How Our Online Resume Builder Works</h1>
+
+<p>Create your professional resume in just four simple steps and get ready for your next career opportunity.</p>
+
+</section>
+
+<section id="steps">
+
+<h2 class="section-title">Create Your Resume in Four Simple Steps</h2>
+
+<div class="cards">
+
+<div class="card">
+<div class="step">1</div>
+<h3>Enter Your Information</h3>
+<p>Add your personal details, education, work experience, certifications, skills, and achievements using our guided editor.</p>
+</div>
+
+<div class="card">
+<div class="step">2</div>
+<h3>Choose a Professional Template</h3>
+<p>Select from a variety of recruiter-approved resume designs based on your industry and career goals.</p>
+</div>
+
+<div class="card">
+<div class="step">3</div>
+<h3>Customize Your Resume</h3>
+<p>Edit colors, fonts, spacing, and sections while using expert writing suggestions to improve your content.</p>
+</div>
+
+<div class="card">
+<div class="step">4</div>
+<h3>Download & Apply</h3>
+<p>Preview your resume, make final adjustments, and download it instantly for job applications.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="benefits">
+
+<h2 class="section-title">Why Our Process Works</h2>
+
+<div class="benefits">
+
+<div class="benefit">✔ Beginner-Friendly Interface</div>
+
+<div class="benefit">✔ No Technical Skills Required</div>
+
+<div class="benefit">✔ Real-Time Editing</div>
+
+<div class="benefit">✔ ATS-Optimized Formatting</div>
+
+<div class="benefit">✔ Fast Resume Creation</div>
+
+<div class="benefit">✔ Professional Appearance</div>
+
+</div>
+
+<div class="ready">
+Within minutes, you'll have a polished resume ready to send to employers.
+</div>
+
+</section>
+
+<footer id="footer">
+
+<p><strong>Name:</strong> Vishal Gujar</p>
+
+<p><strong>Course:</strong> AI for Software Development</p>
+
+<p><strong>College:</strong> ABIT Satara</p>
+
+<p><strong>Date:</strong> 29/06/2026</p>
+
+<p>© 2026 Resume Builder | All Rights Reserved</p>
+
+</footer>
+
+<script>
+
+function toggleMenu(){
+document.getElementById("menu").classList.toggle("active");
+}
+
+document.querySelectorAll("nav a").forEach(link=>{
+link.addEventListener("click",function(){
+document.getElementById("menu").classList.remove("active");
+});
+});
+
+</script>
+
+</body>
+</html>

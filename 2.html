@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Resume Builder</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f4f7fb;
+color:#333;
+scroll-behavior:smooth;
+}
+
+/* Navigation */
+
+nav{
+position:sticky;
+top:0;
+background:#0d47a1;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+.logo{
+font-size:26px;
+font-weight:bold;
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ffeb3b;
+}
+
+/* Hero */
+
+.hero{
+padding:80px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+background:linear-gradient(135deg,#1976d2,#42a5f5);
+color:white;
+}
+
+.hero-text{
+max-width:600px;
+}
+
+.hero h1{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+background:white;
+color:#1565c0;
+padding:14px 30px;
+border:none;
+border-radius:30px;
+font-size:18px;
+cursor:pointer;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+.hero img{
+width:380px;
+max-width:100%;
+animation:float 3s infinite ease-in-out;
+}
+
+@keyframes float{
+50%{
+transform:translateY(-15px);
+}
+}
+
+/* Section */
+
+section{
+padding:70px 10%;
+}
+
+.title{
+text-align:center;
+font-size:36px;
+margin-bottom:50px;
+color:#0d47a1;
+}
+
+/* Cards */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#1565c0;
+}
+
+/* Builder */
+
+.builder{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+}
+
+form{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:6px;
+font-size:16px;
+}
+
+button{
+background:#1565c0;
+color:white;
+padding:12px 20px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+font-size:17px;
+margin-top:10px;
+}
+
+.preview{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.preview h2{
+color:#1565c0;
+margin-bottom:15px;
+}
+
+/* Footer */
+
+footer{
+background:#0d47a1;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:50px;
+}
+
+footer p{
+margin:8px;
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.builder{
+grid-template-columns:1fr;
+}
+
+.hero{
+text-align:center;
+}
+
+.hero{
+justify-content:center;
+}
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:10px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav ul li{
+margin:10px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<ul id="menu">
+
+<li><a href="index.html"> Professional</a></li>
+
+<li><a href="2.html">Build</a></li>
+
+<li><a href="3.html">Templatess</a></li>
+
+<li><a href="4.html">Builder Works</a></li>
+
+<li><a href="5.html">Why Choose</a></li>
+
+</ul>
+
+<section class="hero" id="home">
+
+<div class="hero-text">
+
+<h1>Build a Professional Resume in Minutes</h1>
+
+<p>Create a polished, ATS-friendly resume that helps you stand out in today's competitive job market. Our Online Resume Builder makes it easy to design, customize, and download professional resumes without any design or writing experience.</p>
+
+<a href="#builder"><button class="btn">Start Building</button></a>
+
+</div>
+
+<img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+
+</section>
+
+<section id="benefits">
+
+<h2 class="title">Why Choose Our Resume Builder?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>ATS Friendly</h3>
+<p>Optimized resume layouts accepted by modern recruitment systems.</p>
+</div>
+
+<div class="card">
+<h3>Professional Templates</h3>
+<p>Beautiful resume templates for every profession.</p>
+</div>
+
+<div class="card">
+<h3>AI Suggestions</h3>
+<p>Receive intelligent content recommendations instantly.</p>
+</div>
+
+<div class="card">
+<h3>Easy Editing</h3>
+<p>Drag-and-drop editing with live preview.</p>
+</div>
+
+<div class="card">
+<h3>Cloud Storage</h3>
+<p>Access your resume anytime from anywhere.</p>
+</div>
+
+<div class="card">
+<h3>Download PDF</h3>
+<p>Export professional resumes in one click.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="career">
+
+<h2 class="title">Create Resumes for Every Career Stage</h2>
+
+<div class="grid">
+
+<div class="card"><h3>Students</h3></div>
+<div class="card"><h3>Fresh Graduates</h3></div>
+<div class="card"><h3>Entry-Level Professionals</h3></div>
+<div class="card"><h3>Mid-Career Professionals</h3></div>
+<div class="card"><h3>Senior Executives</h3></div>
+<div class="card"><h3>Freelancers</h3></div>
+
+</div>
+
+</section>
+
+<section id="builder">
+
+<h2 class="title">Resume Builder</h2>
+
+<div class="builder">
+
+<form>
+
+<input type="text" id="name" placeholder="Full Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="text" id="phone" placeholder="Phone">
+
+<textarea id="skills" placeholder="Skills"></textarea>
+
+<textarea id="education" placeholder="Education"></textarea>
+
+<textarea id="experience" placeholder="Experience"></textarea>
+
+<button type="button" onclick="generateResume()">Generate Resume</button>
+
+<button type="button" onclick="window.print()">Download PDF</button>
+
+</form>
+
+<div class="preview">
+
+<h2>Resume Preview</h2>
+
+<h3 id="pname">Your Name</h3>
+
+<p><strong>Email:</strong> <span id="pemail"></span></p>
+
+<p><strong>Phone:</strong> <span id="pphone"></span></p>
+
+<h3>Skills</h3>
+<p id="pskills"></p>
+
+<h3>Education</h3>
+<p id="peducation"></p>
+
+<h3>Experience</h3>
+<p id="pexperience"></p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer id="footer">
+
+<p><strong>Online Resume Builder</strong></p>
+
+<p>Name : Vishal Gujar</p>
+
+<p>Course : CO</p>
+
+<p>© 2026 All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+function generateResume(){
+
+document.getElementById("pname").innerHTML=document.getElementById("name").value;
+
+document.getElementById("pemail").innerHTML=document.getElementById("email").value;
+
+document.getElementById("pphone").innerHTML=document.getElementById("phone").value;
+
+document.getElementById("pskills").innerHTML=document.getElementById("skills").value;
+
+document.getElementById("peducation").innerHTML=document.getElementById("education").value;
+
+document.getElementById("pexperience").innerHTML=document.getElementById("experience").value;
+
+alert("Resume Generated Successfully!");
+
+}
+
+</script>
+
+</body>
+</html>
